@@ -1,0 +1,23 @@
+body {
+    background-image: url("/media/ugly.jpeg");
+    padding: 0;
+    margin: 0;
+}
+
+h1 {
+    margin-top: 0;
+}
+
+#container {
+    padding: 10px;
+    width: 80%;
+    height: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: paleturquoise;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.box {}
