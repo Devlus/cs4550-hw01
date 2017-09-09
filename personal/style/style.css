@@ -1,23 +1,39 @@
+html{
+    height: 100%;
+}
 body {
-    background-image: url("/media/ugly.jpeg");
+    background-image: url("/media/pretty.jpeg");
     padding: 0;
     margin: 0;
+    height: 100%;
 }
 
-h1 {
+#title {
     margin-top: 0;
 }
-
 #container {
     padding: 10px;
     width: 80%;
     height: 90%;
     margin-left: auto;
     margin-right: auto;
-    background-color: paleturquoise;
+    background-color: aliceblue;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
+    flex-direction: column;
+    box-shadow: 0 0 30px black;
+    border-bottom-left-radius: 4px 4px;
+    border-bottom-right-radius: 4px 4px;
 }
-
-.box {}
+.box.left-align{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;   
+}
+.box.left-align p{
+    margin: 0;
+}
+.box.left-align h2{
+    margin-bottom: 0;
+}
