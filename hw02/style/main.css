@@ -5,7 +5,6 @@
 .user-card {
     box-shadow: 0px 0px 2px paleturquoise;
     padding: 1rem;
-    opacity: 20%;
     background-color: ghostwhite;
     margin: .6rem .2rem .6rem .2rem;
 }
@@ -25,7 +24,15 @@
 }
 
 .profile-icon {
+    min-height: 8rem;
     background-image: url("/media/me.jpg");
-    width: 5rem;
-    width: 5rem; 
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.meow-card {
+    background-color: ghostwhite;
+    padding: .2em;
+    margin-bottom: .5em;
+    border-radius: 2% 2%;
 }
