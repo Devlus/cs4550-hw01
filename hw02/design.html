@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Design</title>
+</head>
+
+<body style="width:40%">
+    <h1>Design and Planning</h1>
+    <h2>User First Design</h2>
+    <ol>
+        <li>
+            <h4>As a new User I would like to be able to create and account and log in.</h4>
+            <div>
+                To register for an account, Leroy can first visits the homepage where he can click the "New User?" button. This will lead
+                him to a form where he can submit his email address, desired handle, and password. Upon completion of the
+                form, Leeroy is logged in and brought to his home page.
+            </div>
+        </li>
+        <li>
+            <h4>As a User I would like to be able to post a meow (tweet) to my followers</h3>
+                <div>
+                    James is logged into his account, he would like to post a meow to all his stalkers. To do so, James can enter all the content
+                    he wants into the box on his homepage, and hit the "Post" button to send it.
+                </div>
+        </li>
+        <li>
+            <h4>As a User I would like to be able to stalk (follow) other users.</h3>
+                <div>
+                    Julia is logged into her account, and has just seen a lifechanging meoew from someone else. Julia is able to hover (tap on
+                    mobile) over the username on the meow in order see a popover that allows for stalking, and more information
+                    to be displayed about the author.
+                </div>
+        </li>
+        <li>
+            <h4>As a User I would to be able to remeow (retweet) another users meow.</h3>
+                Julia is logged into her account, and has just seen a lifechanging meoew from someone else. Julia wants to share this amazing
+                meow with all of he stalkers, so she clicks the "remeow" button to the bottom right of the meow's content
+                box.
+        </li>
+        <li>
+            <h4>As a User I would like to be able to mention another user by name.</h3>
+                Devon is a logged in user who wants to reference his best friend Julia in his meow. Devon write a meow and includes "@Julia"
+                (@handle) in order for julia to be notified about his post.
+        </li>
+        <li>
+            <h4>As a User I would like to relate my meow to an ongoing discussion using a scratchtag (hashtag)</h3>
+                Devon is a logged in user who wants to share his thoughts on the fate of pluto as a planet. To do so, Devon includes the
+                scratchtag "#9thRock" (#caseInsensitiveString) so that his meow can be grouped with other pluto believers.
+        </li>
+    </ol>
+    <h3>Other Good idea that didn't make the cut this week:</h3>
+    <ul>
+        <li>
+            <h4>As a User I would like to be able to paw (upvote) or hiss (downvote) another user's moew</h3>
+        </li>
+        <li>
+            <h4>As a user I would like to be able to send a whisker (whisper/private message) to another user.</h3>
+        </li>
+        <li>
+            <h4>As an admin I would like to have the ability to remove offensive meows, and ban some words from meows</h3>
+        </li>
+    </ul>
+
+    <h2>Data First Design</h2>
+    <h3>Primary Types</h3>
+    <ul>
+        <li>User
+            <ul>
+                <li>UserId</li>
+                <li>Email</li>
+                <li>Handle</li>
+                <li>First and Last Name</li>
+            </ul>
+        </li>
+        <li>Meow
+            <ul>
+                <li>MoewId</li>
+                <li>UserId</li>
+                <li>ContentId</li>
+                <li>DateTime Posted</li>
+            </ul>
+        </li>
+        <li>Stalk
+            <ul>
+                <li>UserId : Person doing the stalking</li>
+                <li>UserId : Person being stalked</li>
+                <li>DateTime : StalkedAtTime (SAT)</li>
+            </ul>
+        </li>
+
+    </ul>
+    <h3>Meta-Types (DB enums, and reference tables)</h3>
+    <ul>
+        <li>Meow-Content
+            <ul>
+                <li>ContentId</li>
+                <li>Content Text</li>
+            </ul>
+        </li>
+        <li>Mention
+            <ul>
+                <li>MeowId</li>
+                <li>UserId : MentionedUser</li>
+            </ul>
+        </li>
+        <li>Scratchtag
+            <ul>
+                <li>MeowId</li>
+                <li>UserId : MentionedUser</li>
+            </ul>
+        </li>
+
+
+        <li>Meow-Link
+            <ul>
+                <li>MeowId</li>
+                <li>LinkTypeId</li>
+                <li>Associated UserId</li>
+                <li>Associated MeowId</li>
+            </ul>
+        </li>
+        <li>Meow-Link-Types
+            <ul>
+                <li>LinkTypeId</li>
+                <li>Link Pretty Name
+                    <ul>
+                        <li>Remeow</li>
+                        <li>Response</li>
+                        <li>Upvote/paw</li>
+                        <li>Downvote/hiss</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+    </ul>
+</body>
+
+</html>
