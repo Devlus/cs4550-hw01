@@ -32,7 +32,16 @@
 
 .meow-card {
     background-color: ghostwhite;
-    padding: .2em;
+    padding: .5em;
     margin-bottom: .5em;
     border-radius: 2% 2%;
+}
+.user-name{
+    font-weight: bolder;
+}
+.user-handle{
+    font-style: italic;
+}
+.meow-text{
+    padding: .2em;
 }
