@@ -11,7 +11,7 @@
     <h2>User First Design</h2>
     <ol>
         <li>
-            <h4>As a new User I would like to be able to create and account and log in.</h4>
+            <h4>As a new User I would like to be able to create an account and log in.</h4>
             <div>
                 To register for an account, Leroy can first visits the homepage where he can click the "New User?" button. This will lead
                 him to a form where he can submit his email address, desired handle, and password. Upon completion of the
@@ -22,15 +22,17 @@
             <h4>As a User I would like to be able to post a meow (tweet) to my followers</h3>
                 <div>
                     James is logged into his account, he would like to post a meow to all his stalkers. To do so, James can enter all the content
-                    he wants into the box on his homepage, and hit the "Post" button to send it.
+                    he wants into the box on his homepage, and hit the "Post" button to send it. Alternatively, if he would
+                    like to write a long post, he can click the edit button on the left side of the input box to go to a
+                    full markdown editor.
                 </div>
         </li>
         <li>
             <h4>As a User I would like to be able to stalk (follow) other users.</h3>
                 <div>
-                    Julia is logged into her account, and has just seen a lifechanging meoew from someone else. Julia is able to hover (tap on
-                    mobile) over the username on the meow in order see a popover that allows for stalking, and more information
-                    to be displayed about the author.
+                    Julia is logged into her account and used the search box at the top of the screen to find her best friends. Julia can then
+                    click the stalk right from the search page, or can click view to go the other persons page, and select
+                    stalk from there.
                 </div>
         </li>
         <li>
@@ -99,21 +101,17 @@
                 <li>Content Text</li>
             </ul>
         </li>
-        <li>Mention
-            <ul>
-                <li>MeowId</li>
-                <li>UserId : MentionedUser</li>
-            </ul>
-        </li>
         <li>Scratchtag
+            <br/>
+            <i>Problem: 1 created for each unique scratchtag = lots of records.</i>
             <ul>
-                <li>MeowId</li>
-                <li>UserId : MentionedUser</li>
+                <li>ScratchId</li>
+                <li>ScratchText</li>
             </ul>
         </li>
-
-
         <li>Meow-Link
+            <br/>
+            <i>Problem: 1 created for each mention and scratchtag used, which is gonna create a ton of records.</i>
             <ul>
                 <li>MeowId</li>
                 <li>LinkTypeId</li>
@@ -121,7 +119,7 @@
                 <li>Associated MeowId</li>
             </ul>
         </li>
-        <li>Meow-Link-Types
+        <li>Link-Types
             <ul>
                 <li>LinkTypeId</li>
                 <li>Link Pretty Name
