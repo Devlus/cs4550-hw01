@@ -45,3 +45,27 @@
 .meow-text{
     padding: .2em;
 }
+.scratchtag{
+    font-weight: 700;
+    cursor: pointer;
+}
+.scratchtag::before{
+    content: '#';
+    cursor: pointer;
+    font-weight: 900;
+    font-size: 1.1rem;
+    color: dodgerblue;
+}
+.code-inline{
+    background-color: #ECE9E9;
+    color: #FD702E;
+    display: inline;
+    padding: .2rem;
+}
+.code-block{
+    background-color: ghostwhite;
+    padding: .2rem;
+}
+.fill-parent{
+    min-width: 100%;
+}
