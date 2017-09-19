@@ -1,5 +1,9 @@
 # Repo Directory
 
+www.devonherlitz.solutions
+hw01.devonherlitz.solutions
+hw02.devonherlitz.solutions
+
 Homework One is one master;
 https://github.com/Devlus/cs4550-hw01
 
