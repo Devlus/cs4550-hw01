@@ -1,4 +1,4 @@
-#Repo Directory
+# Repo Directory
 
 Homework One is one master;
 https://github.com/Devlus/cs4550-hw01
