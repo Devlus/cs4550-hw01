@@ -3,6 +3,11 @@
 2. `/user` directory contains the page resources for the user object.
 3. `/meow` directory contains the page resources for the meow object.
 
+## Domain
+www.devonherlitz.solutions
+hw01.devonherlitz.solutions
+hw02.devonherlitz.solutions
+
 Relied heavily on the Bootstrap documentation,
 which was supplemented by the explanation of visibility-tools in bootstrap 4, from this link:\
 https://stackoverflow.com/a/45844579 \
